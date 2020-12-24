@@ -73,13 +73,16 @@ repositories {
         name = "CoFH Maven"
         url = "http://maven.covers1624.net"
     }
+    flatDir {
+        dirs 'libs'
+    }
 }
 
 dependencies {
     runtime "cofh:RedstoneFlux:1.12-${rf_version}:universal"
     runtime "team.chisel.ctm:CTM:MC${minecraft_version}-${ctm_version}"
     deobfCompile "team.chisel.ctm:CTM:MC${minecraft_version}-${ctm_version}:api"
-    deobfCompile "refinedstorage:refinedstorage:${rs_version}:api"
+    deobfCompile "refinedstorage:refinedstorage:1.6.16"
     deobfCompile "appeng:appliedenergistics2:${ae2_version}:api"
     deobfCompile "simple-storage-network:SimpleStorageNetwork:${ssn_version}"
     deobfCompile "cofh:CoFHCore:${cofh_core_version}:universal"
