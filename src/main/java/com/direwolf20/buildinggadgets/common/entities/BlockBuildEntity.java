@@ -89,7 +89,7 @@ public class BlockBuildEntity extends Entity {
         if( setBlock.getBlock() instanceof BlockLeaves )
             setBlock = setBlock.withProperty(BlockLeaves.DECAYABLE, false);
 
-        world.setBlockState(spawnPos, ModBlocks.effectBlock.getDefaultState());
+        //world.setBlockState(spawnPos, ModBlocks.effectBlock.getDefaultState());
         setUsingConstructionPaste(constrPaste);
     }
 
